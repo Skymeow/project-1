@@ -1,0 +1,157 @@
+#start{
+  height:30px;
+  width:60px;
+  background-color: white;
+}
+
+
+body{
+  background-color: black;
+}
+h1{
+  color:white;
+  text-align:center;
+  font-size:100px;
+  font-family:'VT323', monospace;
+}
+footer{
+  display:flex;
+  justify-content: space-around;
+}
+
+#quit{
+  flex:0.2;
+  top:200%;
+  height:30px;
+  width:60px;
+  background-color: pink;
+  text-align: center;
+}
+.score{
+  flex:0.2;
+  text-align: center;
+  background-color: pink;
+  height:30px;
+  width:60px;
+}
+ /*img{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}*/
+.keeptrack{
+  display:flex;
+  flex-direction:column;
+  height:80px;
+  width:140px;
+  justify-content:space-between;
+}
+.highest{
+  flex:0.2;
+  background-color: pink;
+  height:30px;
+  width:60px;
+  text-align: center;
+}
+
+.Maincircle{
+  display:flex;
+  position:relative;
+  /*z-index:-1;*/
+  width:600px;
+  height:600px;
+  background-color: grey;
+  border-radius:50%;
+  border:10px solid mistyrose;
+  margin: 0 auto;
+}
+.cube{
+  flex:1;
+  height:200px;
+  width:200px;
+  display:block;
+}
+.col1{
+  flex:1;
+  height:600px;
+  width:200px;
+}
+#red{
+  background-color:red;
+  /*line-height:600px;
+  margin:auto;*/
+  align-items:center;
+}
+.col3{
+  flex:1;
+  height:600px;
+  width:200px;
+}
+.circle-button {
+  flex:1;
+  height:200px;
+  width:200px;
+  border-radius:50%;
+  z-index: 5;
+}
+#yellow{
+  background-color:yellow;
+  align-items:center;
+}
+.col2{
+  flex:1;
+  height:600px;
+  width:200px;
+  flex-direction:column;
+}
+
+#green{
+  background-color:green;
+  align-items:flex-start;
+}
+#blue{
+  background-color:blue;
+}
+
+
+#button@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+#button@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+
+#button.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+#button.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.flashcolor {
+  background:radial-gradient(circle,red,yellow 30%,green 80%);
+}
+.clickflash{
+  background:radial-gradient(circle,red,yellow 30%,green 80%);
+}
+
+
+

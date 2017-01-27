@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+<h1>Simon Game</h1>
+<button id="start">Start</button>
+<div class ="Maincircle">
+  <div class="col1">
+    <div class="cube 1"></div>
+    <div class="cube 2">
+      <div class="circle-button" id="red"></div>
+    </div>
+    <div class="cube 3"></div>
+  </div>
+  <div class="col2">
+    <div class="cube 4">
+      <div class="circle-button" id="green"></div>
+    </div>
+    <div class="cube 5">
+      <!-- <img src="vertigo.jpg.gif" /> -->
+    </div>
+    <div class="cube 6">
+      <div class="circle-button" id="blue"></div>
+    </div>
+  </div>
+  <div class="col3">
+    <div class="cube 7"></div>
+    <div class="cube 8">
+      <div class="circle-button" id="yellow"></div>
+    </div>
+    <div class="cube 9"></div>
+  </div>
+</div>
+<footer>
+  <div class="keeptrack">
+    <div class="score">Score</div>
+    <input type="text" value="0">
+    <div class="highest">Highest: 5 </div>
+    </div>
+  <button id ="quit">Quit</button>
+</footer>
+</body>
+</html>
