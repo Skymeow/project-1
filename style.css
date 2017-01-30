@@ -7,8 +7,10 @@
 
 body{
   background-color: black;
+
 }
 h1{
+  margin:0;
   color:white;
   text-align:center;
   font-size:100px;
@@ -27,42 +29,35 @@ footer{
   background-color: pink;
   text-align: center;
 }
-.score{
-  flex:0.2;
-  text-align: center;
-  background-color: pink;
-  height:30px;
-  width:60px;
-}
- /*img{
-  width:200px;
-  height:200px;
-  border-radius:50%;
-}*/
+
 .keeptrack{
-  display:flex;
-  flex-direction:column;
-  height:80px;
-  width:140px;
-  justify-content:space-between;
+  display: flex;
+  flex-directions: column;
 }
-.highest{
-  flex:0.2;
-  background-color: pink;
-  height:30px;
-  width:60px;
+.input{
+  flex:1;
   text-align: center;
+
 }
+
+ .score{
+    flex:1;
+    justify-content: flex-start;
+    background-color: pink;
+    margin-bottom: 10px;
+    text-align: center;
+    height:22px;
+    width:inherit;
+  }
 
 .Maincircle{
   display:flex;
   position:relative;
-  /*z-index:-1;*/
   width:600px;
   height:600px;
-  background-color: grey;
+  background-color: rgba(179,255,224,0.9);
   border-radius:50%;
-  border:10px solid mistyrose;
+  border:10px solid rgba(30,255,255,0.7);
   margin: 0 auto;
 }
 .cube{
@@ -152,6 +147,103 @@ footer{
 .clickflash{
   background:radial-gradient(circle,red,yellow 30%,green 80%);
 }
+.backtored{
+  background:red;
+}
+.backtoblue{
+  background:blue;
+}
+.backtogreen{
+  background:green;
+}
+.backtoyellow{
+  background:yellow;
+}
+
+#topbar {
+  margin-bottom: 20px;
+  background: #4f4a41;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  height: 16px;
+  overflow: hidden;
+  -webkit-transition: height 0.5s linear;
+  -moz-transition: height 0.5s linear;
+  transition: height 0.5s linear;
+}
+
+#topbar a:hover {
+  opacity: 1;
+}
+
+#hiddenbar {
+  display: block;
+  width: 100%;
+  background: #4f4a41;
+  color: #b09f82;
+  font-weight: bold;
+  padding: 8px 0;
+  font-size: 1.3em;
+  text-align: center;
+  text-shadow: 1px 1px 0 #444;
+}
+
+#hiddenbar a {
+  color: #fff;
+  font-size: 1.0em;
+  text-decoration: none;
+  opacity: 0.5;
+  text-shadow: none;
+}
+#hiddenbar a:hover { opacity: 1; }
+
+#topbar:hover { height: 57px; }
+
+.spinning {
+    background-color: black;
+    border:none;
+
+    -webkit-animation:spin 15s linear infinite;
+    -moz-animation:spin 15s linear infinite;
+    animation:spin 15s linear infinite;
+}
+@-moz-keyframes spin {
+  /*0% { -moz-transform: rotate(0deg); }
+  30% { -moz-transform: rotate(90deg); }
+  60% { -moz-transform: rotate(180deg); }
+  80% { -moz-transform: rotate(270deg); }*/
+  100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+ /* 0% { -webkit-transform: rotate(0deg); }
+  30% { -webkit-transform: rotate(90deg); }
+  60% { -webkit-transform: rotate(180deg); }
+  80% { -webkit-transform: rotate(270deg); }*/
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+ /* 0% { transform: rotate(0deg); }
+  30% { transform: rotate(90deg); }
+  60% { transform: rotate(180deg); }
+  80% { transform: rotate(270deg); }*/
+  100% { transform: rotate(360deg); }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

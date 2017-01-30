@@ -11,41 +11,55 @@
 </head>
 <body>
 <h1>Simon Game</h1>
-<button id="start">Start</button>
+<div id="topbar">Select Your Game Mode(hover your mouse)
+  <div id="hiddenbar">
+  <button id="Easy">Easy Mode</button>
+  <button id="Hard">Hard Mode</button>
+  </div>
+</div>
 <div class ="Maincircle">
+<!-- <div class="backgroundDiv"> -->
   <div class="col1">
     <div class="cube 1"></div>
     <div class="cube 2">
-      <div class="circle-button" id="red"></div>
+      <div class="circle-button" id="red">
+        <audio id="beep1" src="file:///Users/skyxu/Downloads/68439__pinkyfinger__piano-bb.wav"></audio>
+      </div>
     </div>
     <div class="cube 3"></div>
   </div>
   <div class="col2">
     <div class="cube 4">
-      <div class="circle-button" id="green"></div>
+      <div class="circle-button" id="green">
+        <audio id="beep3" src="file:///Users/skyxu/Downloads/68448__pinkyfinger__piano-g.wav"></audio>
+      </div>
     </div>
     <div class="cube 5">
       <!-- <img src="vertigo.jpg.gif" /> -->
     </div>
     <div class="cube 6">
-      <div class="circle-button" id="blue"></div>
+      <div class="circle-button" id="blue">
+        <audio id="beep2" src="file:///Users/skyxu/Downloads/68446__pinkyfinger__piano-f.wav"></audio>
+      </div>
     </div>
   </div>
   <div class="col3">
     <div class="cube 7"></div>
     <div class="cube 8">
-      <div class="circle-button" id="yellow"></div>
+      <div class="circle-button" id="yellow">
+        <audio id="beep4" src="file:///Users/skyxu/Downloads/68443__pinkyfinger__piano-e.wav"></audio>
+      </div>
     </div>
     <div class="cube 9"></div>
   </div>
 </div>
+<!-- </div> -->
 <footer>
-  <div class="keeptrack">
-    <div class="score">Score</div>
-    <input type="text" value="0">
-    <div class="highest">Highest: 5 </div>
-    </div>
-  <button id ="quit">Quit</button>
+<div class="keeptract">
+ <div class="score">Score</div>
+ <input class="input" type="text" value="0">
+ </div>
+ <button id ="quit">Quit</button>
 </footer>
 </body>
 </html>
