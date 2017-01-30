@@ -21,33 +21,21 @@ footer{
   justify-content: space-around;
 }
 
-#quit{
+.quit{
   flex:0.2;
-  top:200%;
-  height:30px;
-  width:60px;
-  background-color: pink;
+  color:green;
+  margin-top: 10px;
+  font-size:50px;
+  background-color:rgba(155,232,18,0.8);
   text-align: center;
-}
-
-.keeptrack{
-  display: flex;
-  flex-directions: column;
-}
-.input{
-  flex:1;
-  text-align: center;
-
 }
 
  .score{
-    flex:1;
-    justify-content: flex-start;
-    background-color: pink;
     margin-bottom: 10px;
-    text-align: center;
-    height:22px;
-    width:inherit;
+    color:red;
+    text-align:center;
+    font-size:50px;
+    font-family: 'Barrio', cursive;
   }
 
 .Maincircle{
