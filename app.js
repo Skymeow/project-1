@@ -62,7 +62,7 @@ $(document).ready(function() {
       // setTimeout(function() {
       //   img.hide()
       //   flashSequence();
-      }, 2000);
+      // }, 2000);
       flashSequence();
   }
 
